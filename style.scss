@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        height: 100vh;
+        background-image: url("/images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        main{
+            margin-bottom: 4em;
+            .container{
+                .fylo{
+                    background-color: hsl(228, 56%, 26%);
+                    border-radius: 1em 8em 1em 1em;
+                    padding: 2.5em 3em;
+                    margin-bottom: 1em;
+                    .fylo-logo{
+                        margin-bottom: 2.5em;
+                    }
+                    div.container-files{
+                        display: flex;
+                        gap: 1.5em;
+                        .container-img{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: hsl(229, 57%, 11%);
+                            border-radius: 1em;
+                            padding: 1em;
+                        }
+                    }
+                }
+                .storage{
+                    position: relative; // el elemento "absolute" se va a colocar respecto a ese contenedor // the "absolute" element is to be positioned relative to that container 
+                    background-color: hsl(228, 56%, 26%);
+                    padding: 2.5em 3em;
+                    border-radius: 1em;
+                    h4{
+                        text-align: center;
+                        color: hsl(243, 100%, 93%);
+                        font-weight: 400;
+                        margin-bottom: 1em;
+                    }
+                    .storage-progressBar{
+                        display: flex;
+                        background-color: hsl(229, 57%, 11%);
+                        height: 1.5em;
+                        border-radius: 1em;
+                        align-items: center;
+                        margin-bottom: .5em;
+                        padding-left: .1em;
+                        .storage-progressBar-filling{
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            height: 80%;
+                            width: 81.5%;
+                            background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+                            border-radius: 1em;
+                            padding-right: .25em;
+                            .storage-progressBar-ball{
+                                height: 1em;
+                                width: 1em;
+                                background-color: white;
+                                border-radius: 1em;
+                                
+                            }
+                        }
+                    }
+                    .storage-referenceNumbers{
+                        display: flex;
+                        justify-content: space-between;
+                        color: white;
+                        margin-bottom: 1.5em;
+                    }
+                    .storage-GBLeft{
+                        display: flex;
+                        position: absolute;
+                        border-radius: 1em;
+                        background-color: white;
+                        font-weight: 700;
+                        padding: 1em;
+                        width: fit-content;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        p{
+                            color: hsl(229, 57%, 11%);
+                            font-size: 2.5em;
+                            margin-right: .5em;
+                        }
+                        span{
+                            color: hsl(229, 7%, 55%);
+                            align-self: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .fylo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    body{
+        background-color: hsl(229, 57%, 11%);
+        background-image: url("/images/bg-desktop.png");
+        background-size: 100% 50%;
+        background-position: bottom;
+        // align-items: center;
+        main{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+            .container{
+                display: flex;
+                align-items: flex-end;
+                .fylo{
+                    display: block;
+                    min-width: 25vw;
+                    margin-right: 2em;
+                    margin-bottom: 0;
+                }
+                .storage{
+                    height: fit-content;
+                    min-width: 40vw;
+                    h4{
+                        text-align: start;
+                    }
+                    .storage-referenceNumbers{
+                        margin-bottom: 0;
+                    }
+                    .storage-GBLeft{
+                        position: absolute;
+                        top: -3em;
+                        left: auto;
+                        margin-right: 3em;
+                    }
+                    .storage-GBLeft::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -1em;
+                        right: 0;
+                        border-right: 1rem solid white;
+                        border-top: 1rem solid transparent;
+                        border-left: 1rem solid transparent;
+                        border-bottom: 1rem solid transparent;
+                    }
+                    // .puntita{
+                    //     position: absolute;
+                    //     background-color: white;
+                    //     top: 0;
+                    //     right: 0;
+                    //     margin-right: 3em;
+                    //     border-right: 1rem solid #ffffff;
+                    //     border-top: 1rem solid #1d2c67;
+                    //     border-left: 1rem solid #1d2c67;
+                    //     border-bottom: 1rem solid #1d2c67;
+                    // }
+                }
+            }
+        }
+        footer{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 30%;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+
+}

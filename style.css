@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  background-image: url("/images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* body main {
+  margin-bottom: 4em;
+}
+
+* body main .container .fylo {
+  background-color: #1d2c67;
+  border-radius: 1em 8em 1em 1em;
+  padding: 2.5em 3em;
+  margin-bottom: 1em;
+}
+
+* body main .container .fylo .fylo-logo {
+  margin-bottom: 2.5em;
+}
+
+* body main .container .fylo div.container-files {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+* body main .container .fylo div.container-files .container-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c122c;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+* body main .container .storage {
+  position: relative;
+  background-color: #1d2c67;
+  padding: 2.5em 3em;
+  border-radius: 1em;
+}
+
+* body main .container .storage h4 {
+  text-align: center;
+  color: #dddbff;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+* body main .container .storage .storage-progressBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0c122c;
+  height: 1.5em;
+  border-radius: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5em;
+  padding-left: .1em;
+}
+
+* body main .container .storage .storage-progressBar .storage-progressBar-filling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 81.5%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 1em;
+  padding-right: .25em;
+}
+
+* body main .container .storage .storage-progressBar .storage-progressBar-filling .storage-progressBar-ball {
+  height: 1em;
+  width: 1em;
+  background-color: white;
+  border-radius: 1em;
+}
+
+* body main .container .storage .storage-referenceNumbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+* body main .container .storage .storage-GBLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  border-radius: 1em;
+  background-color: white;
+  font-weight: 700;
+  padding: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+* body main .container .storage .storage-GBLeft p {
+  color: #0c122c;
+  font-size: 2.5em;
+  margin-right: .5em;
+}
+
+* body main .container .storage .storage-GBLeft span {
+  color: #848794;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 576px) {
+  .fylo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: #0c122c;
+    background-image: url("/images/bg-desktop.png");
+    background-size: 100% 50%;
+    background-position: bottom;
+  }
+  body main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+  body main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body main .container .fylo {
+    display: block;
+    min-width: 25vw;
+    margin-right: 2em;
+    margin-bottom: 0;
+  }
+  body main .container .storage {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-width: 40vw;
+  }
+  body main .container .storage h4 {
+    text-align: start;
+  }
+  body main .container .storage .storage-referenceNumbers {
+    margin-bottom: 0;
+  }
+  body main .container .storage .storage-GBLeft {
+    position: absolute;
+    top: -3em;
+    left: auto;
+    margin-right: 3em;
+  }
+  body main .container .storage .storage-GBLeft::after {
+    content: "";
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    border-right: 1rem solid white;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+  }
+  body footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
